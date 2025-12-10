@@ -1,99 +1,42 @@
-"use client";
+import { sendMessage } from "@/app/actions/sendMessage";
 
-import { sendInquiry } from "@/app/actions/sendInquiry";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
-
-export default function UpitPage() {
-  const searchParams = useSearchParams();
-  const product = searchParams.get("products") || "";
-
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    message: product ? `Upit za proizvod: ${product}` : "",
-  });
-
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Šaljem...");
-
-    const fd = new FormData();
-    fd.append("name", form.name);
-    fd.append("email", form.email);
-    fd.append("contact", form.contact);
-    fd.append("message", form.message);
-
-    const res = await sendInquiry(fd);
-
-    if (res.ok) {
-      setStatus("Upit uspješno poslan ✔️");
-      alert("Vaš upit je poslan! Javimo se povratno ❤️");
-      setForm({ name: "", email: "", contact: "", message: "" });
-    } else {
-      setStatus("Greška: " + res.error);
-      alert("Dogodila se greška, pokušajte ponovno.");
-    }
-  };
-
+export default function ContactPage() {
   return (
-    <main className="max-w-2xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold mb-8">Pošaljite upit</h1>
+    <main className="min-h-screen flex flex-col items-center justify-center bg-[#E0DCD1] px-6">
+      <h1 className="text-3xl md:text-4xl font-playfair mb-6">
+        Kontaktirajte nas
+      </h1>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form
+        action={sendMessage}
+        className="flex flex-col gap-4 max-w-lg w-full"
+      >
         <input
-          type="text"
           name="name"
-          placeholder="Ime i prezime"
-          value={form.name}
-          onChange={handleChange}
-          className="w-full border p-3 rounded-lg"
+          placeholder="Ime"
           required
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
         />
-
         <input
-          type="email"
           name="email"
+          type="email"
           placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          className="w-full border p-3 rounded-lg"
           required
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
         />
-
-        <input
-          type="text"
-          name="contact"
-          placeholder="Kontakt broj"
-          value={form.contact}
-          onChange={handleChange}
-          className="w-full border p-3 rounded-lg"
-        />
-
         <textarea
           name="message"
-          rows="5"
-          placeholder="Vaš upit"
-          value={form.message}
-          onChange={handleChange}
-          className="w-full border p-3 rounded-lg"
+          placeholder="Poruka"
           required
+          rows={5}
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb] resize-none"
         />
-
         <button
           type="submit"
-          className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
+          className="bg-[#826829cb] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#6e5424] active:scale-95 transition transform"
         >
-          Pošalji upit
+          Pošalji
         </button>
-
-        {status && <p className="text-center text-gray-600">{status}</p>}
       </form>
     </main>
   );

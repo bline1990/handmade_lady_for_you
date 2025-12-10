@@ -16,7 +16,7 @@ export default function DualCardsSection() {
           </div>
 
           <Link
-            href="/dogs"
+            href="/dog-models"
             className="inline-block bg-[#9b7e3c] text-white text-center py-2 px-4 rounded-lg hover:bg-[#7d4b2e] active:bg-[#6e5424] active:scale-95 transition"
           >
             Saznajte više

@@ -48,7 +48,7 @@ export default function DogsSlider() {
               height={800}
               className="
                 w-full 
-                h-[320px] 
+                h-80 
                 md:h-[400px] 
                 object-contain
               "

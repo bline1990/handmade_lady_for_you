@@ -1,22 +1,25 @@
 "use server";
 
-import { supabase } from "@/lib/supabase";
-import { transporter } from "@/lib/mailer";
 import { redirect } from "next/navigation";
+import { supabase } from "../_lib/supabase";
+import { transporter } from "../_lib/mailer";
 
 export async function sendMessage(formData) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
 
-  // 1. spremi u supabase
+  // Spremi u Supabase
   const { error } = await supabase
-    .from("messages")
+    .from("inquiries") // tablica
     .insert({ name, email, message });
 
-  if (error) throw new Error("Database error");
+  if (error) {
+    console.error("Supabase error:", error);
+    throw new Error(error.message);
+  }
 
-  // 2. pošalji email
+  // Pošalji email
   await transporter.sendMail({
     from: process.env.EMAIL_FROM,
     to: process.env.SMTP_USER,
@@ -29,6 +32,6 @@ export async function sendMessage(formData) {
     `,
   });
 
-  // 3. redirect
-  redirect("/thank-you");
+  // Redirect nakon uspješnog slanja
+  redirect("/products/thank-you");
 }

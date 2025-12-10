@@ -4,8 +4,6 @@ import LightBoxModel from "../_components/LightBoxModel";
 import { Suspense } from "react";
 import PawLoader from "../_components/PawLoader";
 import { getDogModelImages } from "../_lib/data-service";
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
 
 export const metadata = {
   title: "Dog-Model",
@@ -13,7 +11,6 @@ export const metadata = {
 
 export default async function Page() {
   const galleryImages = await getDogModelImages();
-  console.log(galleryImages);
 
   return (
     <main className="max-w-6xl mx-auto px-6 py-20 space-y-10">

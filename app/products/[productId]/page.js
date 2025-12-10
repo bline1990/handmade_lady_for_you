@@ -4,9 +4,6 @@ import { sendInquiry } from "@/app/actions/sendInquiry";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
-
 export default function UpitPage() {
   const searchParams = useSearchParams();
   const product = searchParams.get("products") || "";

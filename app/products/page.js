@@ -4,8 +4,6 @@ import PawLoader from "../_components/PawLoader";
 import { getProducts } from "../_lib/data-service";
 import SpecialCollection from "../_components/SpecialCollection";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "Products",
 };

@@ -10,7 +10,6 @@ export const metadata = {
 
 export default async function MasnePage() {
   const products = await getProducts();
-  const { id, name, description, image } = products;
 
   return (
     <main className="max-w-6xl mx-auto mt-10 px-6 py-10 space-y-15">

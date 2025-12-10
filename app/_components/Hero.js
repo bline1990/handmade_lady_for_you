@@ -50,7 +50,7 @@ export default function Hero() {
                 MODNI DODACI ZA PSE
               </h1>
 
-              <h1 className="text-[18px] sm:text-2xl md:text-5xl italic font-playfair text-[#2A1F14] mb-4 whitespace-nowrap overflow-x-auto">
+              <h1 className="text-[18px] sm:text-2xl md:text-5xl italic font-playfair text-[#2A1F14] mb-4 whitespace-nowrap wrap-break-word">
                 HANDMADE BY LADYFORYOU
               </h1>
 

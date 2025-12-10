@@ -33,5 +33,5 @@ export async function sendMessage(formData) {
   });
 
   // Redirect nakon uspješnog slanja
-  redirect("/products/thank-you");
+  redirect("/thank-you");
 }

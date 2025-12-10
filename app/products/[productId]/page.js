@@ -1,6 +1,6 @@
 import { sendMessage } from "@/app/actions/sendMessage";
 
-export default function ContactPage() {
+export default function Page() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#E0DCD1] px-6">
       <h1 className="text-3xl md:text-4xl font-playfair mb-6">

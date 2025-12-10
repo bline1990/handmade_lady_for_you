@@ -59,7 +59,10 @@ export default function Page() {
               <br />
             </p>
             <div className="text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
-              <Link href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94">
+              <Link
+                className="active:bg-[#6e5424] active:scale-95"
+                href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94"
+              >
                 Šapa u srcu
               </Link>
             </div>
@@ -87,8 +90,11 @@ export default function Page() {
               donacijom mašni. Te predivne njuškice zaslužuju zablistati pred
               objektivom i ukrasti nečije srce.
             </p>
-            <div className="text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
-              <Link href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94">
+            <div className="active:bg-[#6e5424] active:scale-95 text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
+              <Link
+                className="active:bg-[#6e5424] active:scale-95"
+                href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94"
+              >
                 Sigurna kućica
               </Link>
             </div>
@@ -116,7 +122,10 @@ export default function Page() {
               zauvijek dom.
             </p>
             <div className="text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
-              <Link href="https://www.instagram.com/azil.osijek.udruga.pobjede?igsh=NnBreHJhNGZ4Mmdk">
+              <Link
+                className="active:bg-[#6e5424] active:scale-95"
+                href="https://www.instagram.com/azil.osijek.udruga.pobjede?igsh=NnBreHJhNGZ4Mmdk"
+              >
                 Azil Osijek - Udruga Pobjede
               </Link>
             </div>

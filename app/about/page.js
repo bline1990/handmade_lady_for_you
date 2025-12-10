@@ -1,5 +1,4 @@
 import Image from "next/image";
-export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "About",
@@ -9,7 +8,7 @@ export default async function Page() {
   return (
     <div className="pt-20 relative overflow-hidden">
       {/* 🐾 HERO SECTION */}
-      <section className="gap-4 max-w-6xl mx-auto px-6 md:px-0 text-center bg-[#E0DCD1]">
+      <section className="gap-4 max-w-7xl mx-auto px-6 md:px-0 text-center bg-[#E0DCD1]">
         <h1 className="pt-6 text-2xl md:text-2xl italic font-playfair text-[#2A1F14] mb-4">
           Kad ljubav prema psima postane inspiracija za stvaranje
         </h1>
@@ -46,59 +45,61 @@ export default async function Page() {
       </section>
 
       {/* ⭐ STORY SECTION */}
-      <section className="max-w-6xl mx-auto px-1 my-6 md:px-0">
-        <div className="grid md:grid-cols-2 items-stretch gap-0">
-          {/* TEXT */}
-          <div className="flex flex-col justify-center bg-[#826829cb] p-8">
-            <h2 className="pl-6 text-3xl font-playfair text-[#ffffff] mb-4">
+      {/* ⭐ STORY SECTION */}
+      <section className="max-w-6xl mx-auto px-0 my-10 space-y-0">
+        {/* BLOK 1 */}
+        <div className="flex flex-col md:flex-row">
+          {/* TEXT – lijevo na desktop, gore na mobile */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center bg-[#826829cb] p-8">
+            <h2 className="pl-2 md:pl-6 text-3xl font-playfair text-white mb-4">
               Priča koja je sve pokrenula
             </h2>
-            <p className="pl-6 text-white /80 leading-relaxed">
+            <p className="pl-2 md:pl-6 text-white/80 leading-relaxed">
               Posebno me ispunjavalo vidjeti pse koji nose nešto što sam
               izradila vlastitim rukama, s puno pažnje i ljubavi. Velik dio
               mašni donirala sam i našim skloništima, kako bi i njihovi
               štićenici zasjali u nešto novo i lijepo — o tome možete više
               pročitati u sekciji Donacije. U tom periodu prijateljica mi je
-              izradila logo inspiriran upravo Lady, prema nazivu koji sam
-              osmislila — ladyforyou — i tako je nastao i poseban Instagram
-              profil na kojem danas izlažem svoje radove.
+              izradila logo inspiriran upravo Lady, prema nazivu — ladyforyou.
             </p>
           </div>
 
-          {/* IMAGE */}
-          <div className="w-full h-full">
+          {/* IMAGE – desno na desktop, dolje na mobile */}
+          <div className="w-full md:w-1/2 h-[350px] md:h-[450px]">
             <Image
               src="/insta12.jpg"
               alt="Dog bows"
               width={600}
               height={450}
-              className="w-full h-full shadow-lg object-cover"
+              className="w-full h-full object-cover shadow-lg"
             />
           </div>
-          <div className="w-full h-full">
-            <Image
-              src="/story1.JPEG"
-              alt="Dog bows"
-              width={600}
-              height={450}
-              className="w-full h-full shadow-lg object-cover"
-            />
-          </div>
+        </div>
 
-          <div className="flex flex-col justify-center bg-[#826829cb] p-8">
-            <h2 className="pl-6 text-3xl font-playfair text-[#ffffff] mb-4">
-              S vremenom je narasla i naša mala obitelj{" "}
+        {/* BLOK 2 – OBRNUT SAMO NA DESKTOPU */}
+        <div className="flex flex-col md:flex-row-reverse">
+          {/* TEXT – desno na desktop, gore na mobile */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center bg-[#826829cb] p-8">
+            <h2 className="pl-2 md:pl-6 text-3xl font-playfair text-white mb-4">
+              S vremenom je narasla i naša mala obitelj
             </h2>
-            <p className="pl-6 text-white /80 leading-relaxed">
+            <p className="pl-2 md:pl-6 text-white/80 leading-relaxed">
               Pridružila nam se još jedna kavalirka — Story. Danas smo pravi
               trio koji svakodnevno unosi radost, inspiraciju i nove ideje u sve
-              što stvaramo, te se veselimo svakoj novoj kolekciji i svakom
-              ljubimcu koji nosi naše proizvode. Zašto ovo radim? Zato što me
-              neopisivo veseli stvarati za vaše ljubimce — drugačije,
-              personalizirano, moderno i od pomno biranih kvalitetnih
-              materijala. Svaki proizvod izrađujem s ljubavlju, željom da vašem
-              ljubimcu donese radost, udobnost i da izgleda baš posebno.
+              što stvaramo. Svaki proizvod izrađujem s ljubavlju i željom da vaš
+              ljubimac izgleda i osjeća se posebno.
             </p>
+          </div>
+
+          {/* IMAGE – lijevo na desktop, dolje na mobile */}
+          <div className="w-full md:w-1/2 h-[350px] md:h-[450px]">
+            <Image
+              src="/story1.JPEG"
+              alt="Dog story"
+              width={600}
+              height={450}
+              className="w-full h-full object-cover shadow-lg"
+            />
           </div>
         </div>
       </section>

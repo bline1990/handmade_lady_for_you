@@ -53,7 +53,7 @@ export default function FeaturedProducts() {
               </h3>
               <p className="text-[#3F3226]/80">{p.desc}</p>
 
-              <button className="mt-5 px-4 py-2 bg-[#9b7e3c] text-white rounded-lg hover:bg-[#6c4730] transition-all">
+              <button className="mt-5 px-4 py-2 active:bg-[#6e5424] active:scale-95 bg-[#9b7e3c] text-white rounded-lg hover:bg-[#6c4730] transition-all">
                 <Link href="/products">Saznajte više </Link>
               </button>
             </div>

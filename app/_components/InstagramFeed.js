@@ -48,7 +48,7 @@ export default function InstagramFeed() {
           <Link
             href="https://www.tiktok.com/@lady_the_cav_dog?_r=1&_t=ZN-91tTUWuSpuQ"
             target="_blank"
-            className="text-[#D6A354] font-semibold hover:underline"
+            className="text-[#D6A354] font-semibold hover:underline active:bg-[#6e5424] active:scale-95"
           >
             lady_the_cav_dog
           </Link>

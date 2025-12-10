@@ -42,7 +42,7 @@ export default function ProductList({ products }) {
             <div className="text-center w-full">
               <Link
                 href={`/products/${product.id}`}
-                className="block w-full bg-[#9b7e3c] text-white py-2 rounded-lg hover:bg-[#7d4b2e] transition"
+                className="block w-full bg-[#9b7e3c] text-white py-2 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
               >
                 Pošaljite upit
               </Link>
@@ -72,39 +72,3 @@ export default function ProductList({ products }) {
     </div>
   );
 }
-
-//onClick={() => openLightbox(product.image)}
-
-/*
-
- const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxImage, setLightboxImage] = useState("");
-
-  const openLightbox = (img) => {
-    setLightboxImage(img);
-    setLightboxOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-    setLightboxImage("");
-  };
-
-      {lightboxOpen && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
-          <button
-            onClick={closeLightbox}
-            className="absolute top-5 right-5 text-white text-3xl"
-          >
-            ×
-          </button>
-
-          <Image
-            src={lightboxImage}
-            alt="Pregled slike"
-            width={1400}
-            height={1400}
-            className="max-w-[90%] max-h-[90%] object-contain"
-          />
-        </div>
-      )} */

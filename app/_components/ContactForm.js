@@ -1,45 +1,43 @@
-"use client";
-
-import { useState } from "react";
 import { sendMessage } from "@/app/actions/sendMessage";
 
-export default function ContactForm() {
-  const [status, setStatus] = useState("");
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setStatus("Šaljem...");
-
-    const formData = new FormData(e.target);
-
-    const res = await sendMessage(formData);
-
-    if (res.ok) {
-      setStatus("Poruka poslana!");
-      e.target.reset();
-    } else {
-      setStatus("Greška: " + res.error);
-    }
-  }
-
+export default function ContactPage() {
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg">
-      <input name="name" placeholder="Ime" required className="border p-2" />
-      <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        required
-        className="border p-2"
-      />
-      <textarea
-        name="message"
-        placeholder="Poruka"
-        required
-        className="border p-2"
-      />
-      <button className="bg-black text-white p-2">Pošalji</button>
-      <p>{status}</p>
-    </form>
+    <main className="min-h-screen flex flex-col items-center justify-center bg-[#E0DCD1] px-6">
+      <h1 className="text-3xl md:text-4xl font-playfair mb-6">
+        Kontaktirajte nas
+      </h1>
+
+      <form
+        action={sendMessage}
+        className="flex flex-col gap-4 max-w-lg w-full"
+      >
+        <input
+          name="name"
+          placeholder="Ime"
+          required
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
+        />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
+        />
+        <textarea
+          name="message"
+          placeholder="Poruka"
+          required
+          rows={5}
+          className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb] resize-none"
+        />
+        <button
+          type="submit"
+          className="bg-[#826829cb] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#6e5424] active:scale-95 transition transform"
+        >
+          Pošalji
+        </button>
+      </form>
+    </main>
   );
 }

@@ -30,7 +30,7 @@ export default function Navbar() {
             alt="Charles Cavaliers"
             width={90}
             height={90}
-            className="cursor-pointer"
+            className="cursor-pointer "
           />
         </Link>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`block text-[17px] font-playfair transition-all duration-300 ${
                     isActive ? "text-[#2A1F14]" : "text-[#2A1F14]/80"
-                  } hover:text-[#2A1F14]`}
+                  } hover:text-[#2A1F14] active:bg-[#90794d] active:scale-95`}
                   onClick={() => setMenuOpen(false)} // zatvara menu nakon klika
                 >
                   {link.name}

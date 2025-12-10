@@ -18,7 +18,7 @@ export default async function Page() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-20 space-y-10">
       {/* Uvodni tekst */}
-      <section className="bg-[#E0DCD1] w-6xl p-10">
+      <section className="bg-[#E0DCD1] max-w-6xl w-full p-6 md:p-10 mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed">
           Najveća mi je radost što danas imam toliko različitih psećih modela
           diljem svijeta – od Amerike i Australije pa sve do Europe i moje

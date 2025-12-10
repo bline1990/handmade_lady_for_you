@@ -17,7 +17,7 @@ export default function DualCardsSection() {
 
           <Link
             href="/dogs"
-            className="inline-block bg-[#9b7e3c] text-white text-center py-2 px-4 rounded-lg hover:bg-[#7d4b2e] transition"
+            className="inline-block bg-[#9b7e3c] text-white text-center py-2 px-4 rounded-lg hover:bg-[#7d4b2e] active:bg-[#6e5424] active:scale-95 transition"
           >
             Saznajte više
           </Link>
@@ -36,7 +36,7 @@ export default function DualCardsSection() {
 
           <Link
             href="/donations"
-            className="inline-block bg-[#9b7e3c] text-center text-white py-2 px-4 rounded-lg hover:bg-[#7d4b2e] transition"
+            className="inline-block bg-[#9b7e3c] text-center text-white py-2 px-4 rounded-lg hover:bg-[#7d4b2e] active:bg-[#6e5424] active:scale-95 transition"
           >
             Saznajte više
           </Link>

@@ -41,27 +41,27 @@ export default function Hero() {
                       z-20 w-full max-w-full px-6 text-center"
           >
             <div className="max-w-5xl mx-auto bg-white/30 p-6 rounded-xl">
-              <p className="font-playfair text-xs text-[#9b7e3c] mb-2">
+              <p className="font-playfair text-xs text-[#9b7e3c] mb-4">
                 LjUBAV PREMA PSIMA PRETVORENA U UMJETNOST
               </p>
-              <h1 className="pt-4 text-4xl md:text-6xl font-playfair font-bold text-[#2A1F14] mb-4">
+              <h1 className="pt-4 text-1xl md:text-4xl font-playfair font-bold text-[#2A1F14] mb-1">
                 MODNI DODACI ZA PSE
               </h1>
-              <h1 className="text-4xl italic md:text-6xl font-playfair text-[#2A1F14] mb-4">
+              <h1 className="text-2xl italic md:text-5xl font-playfair text-[#2A1F14] mb-4">
                 HANDMADE BY LADYFORYOU
               </h1>
 
-              <div className="flex justify-center gap-4 pt-9">
+              <div className="flex justify-center gap-4 pt-11">
                 <Link
                   href="/products"
-                  className="bg-[#9b7e3c] text-sm text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition"
+                  className="bg-[#9b7e3c] text-s text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
                 >
                   POGLEDAJTE MAŠNE
                 </Link>
                 <Link
                   href="https://www.instagram.com/handmadeby_ladyforyou?igsh=eHU3YzhrMjJqNmUz&utm_source=qr"
                   target="_blank"
-                  className="border-2 border-[#9b7e3c] text-sm text-[#2A1F14] px-6 py-3 rounded-lg hover:bg-[#D6A354]/20 transition"
+                  className="border-2 border-[#9b7e3c] text-sm text-center text-[#2A1F14] px-6 py-5 rounded-lg hover:bg-[#D6A354]/20 transition active:bg-[#6e5424] active:scale-95"
                 >
                   INSTAGRAM
                 </Link>

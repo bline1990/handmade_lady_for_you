@@ -40,7 +40,7 @@ export default function Hero() {
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                        z-20 w-full px-6 text-center"
           >
-            <div className="max-w-5xl mx-auto bg-white/30 p-6 rounded-xl">
+            <div className="max-w-5xl mx-auto bg-white/30 p-4 rounded-xl">
               {/* MOBILNI FRIENDLY TEKST */}
               <p className="font-playfair text-[10px] sm:text-xs md:text-sm text-[#9b7e3c] mb-4 whitespace-nowrap overflow-x-auto">
                 LJUBAV PREMA PSIMA PRETVORENA U UMJETNOST
@@ -55,7 +55,7 @@ export default function Hero() {
               </h1>
 
               {/* BUTTONS */}
-              <div className="flex justify-center gap-4 pt-6 md:pt-11">
+              <div className="flex justify-center gap-4 pt-13 md:pt-15">
                 <Link
                   href="/products"
                   className="bg-[#9b7e3c] text-sm sm:text-base text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"

@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://handmade-lady-for-you-lrjw.vercel.app";
+  const baseUrl = "https://handmadeladyforyou.com";
   return [
     {
       url: baseUrl,

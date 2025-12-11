@@ -6,6 +6,6 @@ export default function robots() {
         allow: "/",
       },
     ],
-    sitemap: "https://handmade-lady-for-you-lrjw.vercel.app/sitemap.xml",
+    sitemap: "https://handmadeladyforyou.com/sitemap.xml",
   };
 }

@@ -3,6 +3,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Donations",
+  description:
+    "Podržite naš rad i pomozite nam pružiti bolji život napuštenim i nezaštićenim životinjama. Vaša donacija direktno pomaže hrani, skrbi i zbrinjavanju pasa u potrebi",
 };
 
 export default function Page() {
@@ -58,10 +60,11 @@ export default function Page() {
               <br />
               <br />
             </p>
-            <div className="text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
+            <div className="mt-7 text-center">
               <Link
-                className="active:bg-[#6e5424] active:scale-95"
+                className="w-full block bg-[#9b7e3c] text-sm sm:text-base text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
                 href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94"
+                target="_blank"
               >
                 Šapa u srcu
               </Link>
@@ -90,10 +93,11 @@ export default function Page() {
               donacijom mašni. Te predivne njuškice zaslužuju zablistati pred
               objektivom i ukrasti nečije srce.
             </p>
-            <div className="active:bg-[#6e5424] active:scale-95 text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
+            <div className="mt-7 text-center">
               <Link
-                className="active:bg-[#6e5424] active:scale-95"
+                className="w-full block bg-[#9b7e3c] text-sm sm:text-base text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
                 href="https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94"
+                target="_blank"
               >
                 Sigurna kućica
               </Link>
@@ -121,10 +125,11 @@ export default function Page() {
               zapele za oko nekom udomitelju - jer svaki pas zaslužuje topli
               zauvijek dom.
             </p>
-            <div className="text-center mt-5 bg-[#9b7e3c] hover:bg-[#7d4b2e] text-white px-4 py-3 transition rounded-lg">
+            <div className="mt-7 text-center">
               <Link
-                className="active:bg-[#6e5424] active:scale-95"
+                className="w-full block bg-[#9b7e3c] text-sm sm:text-base text-white px-4 py-3 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
                 href="https://www.instagram.com/azil.osijek.udruga.pobjede?igsh=NnBreHJhNGZ4Mmdk"
+                target="_blank"
               >
                 Azil Osijek - Udruga Pobjede
               </Link>

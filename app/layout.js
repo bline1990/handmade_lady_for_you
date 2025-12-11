@@ -11,8 +11,15 @@ export const metadata = {
     template: "%s / Handmade by LadyForYou",
     default: "Welcome / Handmade by LadyForYou",
   },
+  keywords: [
+    "handmade",
+    "ručno rađeni dodaci",
+    "modni dodaci za pse",
+    "unikatni pokloni",
+  ],
   description:
-    "Modni dodaci za pse,sve mašne su ručno izrađene od pažljivo odabranih materijala, savršene za svaki elegantan outfit.",
+    "Handmade Lady For You nudi unikatne ručno izrađene modne dodatke za pse — mašne, marame i gumice, izrađene s pažnjom i ljubavlju. Otkrijte personalizirane proizvode za vašeg ljubimca i podržite kreativni rad inspiriran kavalirkama Lady i Story.",
+  type: "website",
 };
 
 export default function RootLayout({ children }) {

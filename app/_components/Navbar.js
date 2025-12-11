@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -48,7 +49,6 @@ export default function Navbar() {
                 >
                   {link.name}
                 </Link>
-                {/* MAŠNA EFEKT */}
                 <span
                   className={`absolute left-1/2 -translate-x-1/2 top-full mt-1
                     opacity-0 group-hover:opacity-100 transition-opacity duration-300
@@ -60,6 +60,11 @@ export default function Navbar() {
             );
           })}
         </ul>
+
+        {/* LANGUAGE SWITCHER - DESKTOP */}
+        <div className="hidden md:flex">
+          <LanguageSwitcher />
+        </div>
 
         {/* MOBILE MENU BUTTON */}
         <div className="md:hidden">
@@ -85,13 +90,17 @@ export default function Navbar() {
                   className={`block text-[17px] font-playfair transition-all duration-300 ${
                     isActive ? "text-[#2A1F14]" : "text-[#2A1F14]/80"
                   } hover:text-[#2A1F14] active:bg-[#90794d] active:scale-95`}
-                  onClick={() => setMenuOpen(false)} // zatvara menu nakon klika
+                  onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               </li>
             );
           })}
+          {/* LANGUAGE SWITCHER - MOBILE */}
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
       )}
     </nav>

@@ -6,6 +6,8 @@ import SpecialCollection from "../_components/SpecialCollection";
 
 export const metadata = {
   title: "Products",
+  description:
+    "Ručne mašne izrađene od pažljivo odabranih Pamigo Fabrics materijala. Dostupne u tri veličine, s prikazom naziva i sastava svakog uzorka. Elegantne i kvalitetne mašne dostupne su na upit — odaberite dizajn koji vam najbolje odgovara.",
 };
 
 export default async function MasnePage() {

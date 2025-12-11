@@ -2,6 +2,8 @@ import Image from "next/image";
 
 export const metadata = {
   title: "About",
+  description:
+    "Saznajte priču o ručno izrađenim modnim dodacima za pse inspiriranim kavalirkama Lady i Story. Otkrivamo kako je ljubav prema psima pokrenula kreativni proces, darivanje skloništima i stvaranje personaliziranih proizvoda s pažnjom i ljubavlju",
 };
 
 export default async function Page() {

@@ -7,6 +7,8 @@ import { getDogModelImages } from "../_lib/data-service";
 
 export const metadata = {
   title: "Dog-Model",
+  description:
+    "Pseći modeli iz cijelog svijeta nose moje ručno izrađene dodatke, izrađene po mjeri i željama svakog vlasnika. Pogledajte galeriju pasa iz Amerike, Australije, Europe i Hrvatske te otkrijte personalizirane modne dodatke za ljubimce",
 };
 
 export default async function Page() {

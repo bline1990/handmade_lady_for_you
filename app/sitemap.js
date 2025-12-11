@@ -1,0 +1,29 @@
+export default function sitemap() {
+  const baseUrl = "https://handmade-lady-for-you-lrjw.vercel.app";
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/dog-models`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/donations`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+    },
+  ];
+}

@@ -5,6 +5,7 @@ import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import PawLoader from "./_components/PawLoader";
 import { Suspense } from "react";
+import CookieBanner from "./_components/CookieBanner";
 
 export const metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <Suspense falback={<PawLoader />}>
           <Footer />
         </Suspense>
+        <CookieBanner />
       </body>
     </html>
   );

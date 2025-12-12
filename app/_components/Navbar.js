@@ -62,9 +62,6 @@ export default function Navbar() {
         </ul>
 
         {/* LANGUAGE SWITCHER - DESKTOP */}
-        <div className="hidden md:flex">
-          <LanguageSwitcher />
-        </div>
 
         {/* MOBILE MENU BUTTON */}
         <div className="md:hidden">

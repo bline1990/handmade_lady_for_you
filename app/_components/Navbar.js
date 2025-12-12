@@ -98,9 +98,6 @@ export default function Navbar() {
             );
           })}
           {/* LANGUAGE SWITCHER - MOBILE */}
-          <li>
-            <LanguageSwitcher />
-          </li>
         </ul>
       )}
     </nav>

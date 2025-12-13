@@ -4,19 +4,9 @@ import { sendMessage } from "@/app/actions/sendMessage";
 import { getProduct } from "@/app/_lib/data-service";
 
 export default async function ProductPage({ params }) {
-  console.log(await params);
   const { lang, productId } = await params;
   const t = (await getTranslations(lang)).product;
   const product = await getProduct(productId);
-
-  console.log(product);
-  // privremeni mock – kasnije možeš spojiti Supabase
-  /*const product = {
-    title: "Handmade dog bow",
-    description:
-      "Ručno izrađena mašna od kvalitetnih materijala, prilagođena svakom psu.",
-    image: "/insta3.jpeg",
-  };*/
 
   return (
     <main className="min-h-screen bg-[#E0DCD1] px-6 py-20">

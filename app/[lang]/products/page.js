@@ -5,6 +5,7 @@ import ProductList from "@/app/_components/ProductList";
 import { getProducts } from "@/app/_lib/data-service";
 import { getTranslations } from "@/app/_lib/translations";
 
+export const revalidate = 300;
 export const metadata = {
   title: "Products",
   description:

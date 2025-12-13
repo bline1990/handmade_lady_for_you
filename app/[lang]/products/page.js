@@ -36,7 +36,7 @@ export default async function ProductsPage({ params }) {
 
       {/* LISTA PROIZVODA I SPECIAL COLLECTION */}
       <Suspense fallback={<PawLoader />}>
-        <ProductList products={products} t={t} lang={lang} />
+        <ProductList products={products ?? []} t={t} lang={lang} />
         <SpecialCollection lang={lang} />
       </Suspense>
     </main>

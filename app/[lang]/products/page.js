@@ -17,7 +17,7 @@ export default async function ProductsPage({ params }) {
   const resolvedParams = await params;
   const { lang } = resolvedParams;
 
-  const t = getTranslations(lang);
+  const t = await getTranslations(lang);
   const products = await getProducts();
 
   return (

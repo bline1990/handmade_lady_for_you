@@ -6,8 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
+import { getTranslations } from "../_lib/translations";
 
-export default function SpecialCollection() {
+export default function SpecialCollection({ lang }) {
+  const t = getTranslations(lang).specialCollection;
   const images = [
     "/hoodica1.jpeg",
     "/hoodica2.jpeg",
@@ -24,7 +26,7 @@ export default function SpecialCollection() {
     <section className="max-w-6xl mx-auto px-6 py-10">
       {/* Naslov */}
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 tracking-wide">
-        Posebna kolekcija
+        {t.title}
       </h2>
 
       {/* Carousel */}
@@ -47,7 +49,7 @@ export default function SpecialCollection() {
             >
               <Image
                 src={src}
-                alt="Posebna kolekcija"
+                alt={t.altText}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -68,7 +70,7 @@ export default function SpecialCollection() {
           <div className="relative w-[90%] max-w-4xl h-[80vh]">
             <Image
               src={activeImage}
-              alt="Full preview"
+              alt={t.lightboxAlt}
               fill
               className="object-contain"
               priority

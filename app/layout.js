@@ -1,11 +1,4 @@
 import "./globals.css";
-//import { Josefin_Sans, Roboto_Serif } from "next/font/google";
-
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
-import PawLoader from "./_components/PawLoader";
-import { Suspense } from "react";
-import CookieBanner from "./_components/CookieBanner";
 
 export const metadata = {
   title: {
@@ -19,21 +12,14 @@ export const metadata = {
     "unikatni pokloni",
   ],
   description:
-    "Handmade Lady For You nudi unikatne ručno izrađene modne dodatke za pse — mašne, marame i gumice, izrađene s pažnjom i ljubavlju. Otkrijte personalizirane proizvode za vašeg ljubimca i podržite kreativni rad inspiriran kavalirkama Lady i Story.",
+    "Handmade Lady For You nudi unikatne ručno izrađene modne dodatke za pse — mašne, marame i gumice.",
   type: "website",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        <main className="min-h-screen pt-24">{children}</main>
-        <Suspense falback={<PawLoader />}>
-          <Footer />
-        </Suspense>
-        <CookieBanner />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

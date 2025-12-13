@@ -1,0 +1,172 @@
+{
+  "about": {
+    "heroTitle": "Kad ljubav prema psima postane inspiracija za stvaranje",
+    "heroText": "Sve je započelo iz velike ljubavi prema mojoj kavalirki Lady. Toliko sam uživala fotografirati je, snimati i dijeliti njezine svakodnevne dogodovštine da sam 2022. godine otvorila njezin vlastiti Instagram profil. Kroz tu avanturu upoznala sam divnu zajednicu vlasnika cavalier king charles spaniela diljem Europe i Svijeta, a iz brojnih online poznanstava nastala su i prava prijateljstva. S vremenom je Lady postala mala modna influenserica. Inspirirana predivnim modnim dodacima za pse koji se izrađuju širom svijeta — posebno mašnama, maramama i gumicama, koje se u Hrvatskoj još uvijek rjeđe viđaju — poželjela sam upravo takve proizvode donijeti i ovdje. Satima sam gledala YouTube tutorijale, učila tehnike šivanja, ali i rad s vrućim ljepilom i pištoljem, te sve male trikove koji pomažu da svaki detalj bude uredan, čvrst i estetski besprijekoran. Istovremeno sam istraživala gdje nabaviti kvalitetne materijale i moderne, trendi uzorke. Nakon ulaganja u opremu, potpuno sam se prepustila kreativnom procesu — i zaljubila se u njega.",
+    "story1Title": "Priča koja je sve pokrenula",
+    "story1Text": "Posebno me ispunjavalo vidjeti pse koji nose nešto što sam izradila vlastitim rukama, s puno pažnje i ljubavi. Velik dio mašni donirala sam i našim skloništima, kako bi i njihovi štićenici zasjali u nešto novo i lijepo — o tome možete više pročitati u sekciji Donacije. U tom periodu prijateljica mi je izradila logo inspiriran upravo Lady, prema nazivu — ladyforyou.",
+    "story2Title": "S vremenom je narasla i naša mala obitelj",
+    "story2Text": "Pridružila nam se još jedna kavalirka — Story. Danas smo pravi trio koji svakodnevno unosi radost, inspiraciju i nove ideje u sve što stvaramo. Svaki proizvod izrađujem s ljubavlju i željom da vaš ljubimac izgleda i osjeća se posebno."
+  },
+
+  "dogModels": {
+    "intro1": "Najveća mi je radost što danas imam toliko različitih psećih modela diljem svijeta – od Amerike i Australije pa sve do Europe i moje Hrvatske – koji s ponosom nose moj rad. Svaki put kad vidim fotografiju psa u nekom od mojih proizvoda, sretna sam i to mi je motivacija za dalje. Baš zato svaki komad izrađujem potpuno individualno, s pažnjom i razumijevanjem da ni jedan pas ni jedan vlasnik nisu isti. Svaki ima svoje želje, mjere i male posebnosti, a ja sam tu da ih saslušam i ispunim.",
+    "intro2": "Uvijek se trudim dati maksimum kako bi svaki proizvod bio što ljepši, udobniji i savršeno uklopljen, a rado pomažem savjetima oko idealne veličine ili izbora detalja.",
+    "intro3": "Iako su moji prvi kupci uglavnom bili stranci koji su me otkrili preko bloga @lady_the_cav_dog koji okuplja preko 11 tisuća pratitelja, danas se polako širimo i u Hrvatskoj, gdje s veseljem nudim nešto drukčije. Za moje radove otvorila sam poseban profil na Instagramu @handmade_by_ladyforyou koji okuplja preko 1000 ljubitelja modnih dodataka za ljubimce.",
+    "intro4": "A najveća inspiracija u svemu tome su mi moje dvije kavalirke, koje me svakodnevno potiču na stvaranje."
+  },
+  "products": {
+    "introText": "Sve mašne izrađene su od pažljivo odabranih materijala, naručenih u Pamigo Fabrics Croatia. Ispod svakog uzorka prikazan je njegov naziv i sastav, kako biste lako mogli odabrati ono što vam najviše odgovara. Mašne dolaze u tri veličine: mala: 5 × 9 inča, srednja: 7 × 11 inča, velika: 9 × 13 inča. Trenutno su dostupne samo obične, “regular” mašne, savršene za svaki elegantan outfit. Proizvodi su dostupni na upit — nakon što pošaljete zahtjev, povratno ćemo vam se javiti s informacijama o izradi i dostupnosti.",
+    "buttonText": "Pošaljite upit",
+    "items": {
+      "1": {
+        "name": "Karirana mašna crvena",
+        "description": "Škotski karo, 65% poliester, 35% viskoza"
+      },
+      "2": {
+        "name": "Pliš mašna Emerald",
+        "description": "Emerald Green, 94% poliester, 6% elastan"
+      },
+      "3": {
+        "name": "Pliš mašna  Bordeaux",
+        "description": " 94% poliester, 6% elastan"
+      },
+      "4": {
+        "name": "Božićna mašna Gnom",
+        "description": "80% pamuk, 20% poliester"
+      },
+      "5": {
+        "name": "Božić mašna Half Panama",
+        "description": "100% pamuk "
+      },
+      "6": {
+        "name": "Božićna mašna na pse",
+        "description": "95% pamuk, 5% elastan"
+      },
+      "7": {
+        "name": "Božićna mašna - zelena",
+        "description": "Pamučno platno, 100% pamuk"
+      },
+      "8": {
+        "name": "Božićna mašna - crvena",
+        "description": "Pamučno platno, 100% pamuk"
+      }
+    }
+  },
+  "specialCollection": {
+    "title": "Posebna kolekcija",
+    "altText": "Posebna kolekcija",
+    "lightboxAlt": "Pregled slike kolekcije"
+  },
+  "donations": {
+    "hero": {
+      "title": "Mašne koje mijenjaju živote",
+      "text1": "Tijekom godina sam podržala nekoliko hrvatskih skloništa malim gestama – darovala sam mašne i marame koje sam izradila s ljubavlju, a želja mi je nastaviti pomagati. Svaka mašna ili marama nije samo modni detalj, već mali doprinos velikoj promjeni u životima životinja koje čekaju svoju priliku za sreću i zauvijek dom. Naša misija je jednostavna: svaki pas zaslužuje ljubav, pažnju i priliku za dom. Mašne pomažu pri fotografiranju, privlače pozornost i daju psima dodatnu dozu šarma — i vjerujte, to čini razliku. Mašne nisu samo simbol stila, već simbol nade. Kada pas zablista na fotografiji, lakše pronađe put do nečijeg srca i doma."
+    },
+    "cards": [
+      {
+        "title": "Udruga “Šapa u srcu”",
+        "text": "Veseli me što sam za predivne njuškice u Ogulinu izradila mašne, uljepšala im dan i možda povećala mogućnost da ih potencijalni udomitelj uoči - i ne uspije im odoljeti u tako šarmantnom outfitu!",
+        "linkText": "Šapa u srcu",
+        "linkUrl": "https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94",
+        "image": "/azil_udruga_sapa.jpg",
+        "alt": "Šapa Spasa"
+      },
+      {
+        "title": "“Sigurna kućica”",
+        "text": "Pratim rad ovih divnih volontera pored Velike Gorice koji pomažu udomljavati nezbrinute životinje pa sam ih odlučila razveseliti donacijom mašni. Te predivne njuškice zaslužuju zablistati pred objektivom i ukrasti nečije srce.",
+        "linkText": "Sigurna kućica",
+        "linkUrl": "https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94",
+        "image": "/donacije2.jpg",
+        "alt": "Sigurna kućica"
+      },
+      {
+        "title": "“Azil Osijek - Udruga Pobjede”",
+        "text": "Uoči jednog Božića, dio mašni donirala sam preslatkim njuškicama u Osijeku kako bi u tom vremenu nade, bile i one dotjerane i možda zapele za oko nekom udomitelju - jer svaki pas zaslužuje topli zauvijek dom.",
+        "linkText": "Azil Osijek - Udruga Pobjede",
+        "linkUrl": "https://www.instagram.com/azil.osijek.udruga.pobjede?igsh=NnBreHJhNGZ4Mmdk",
+        "image": "/azil2_osijek.jpg",
+        "alt": "Azil Osijek"
+      }
+    ],
+    "closing": "Kada poklonimo mašnu psu koji čeka dom — ona postaje više od ukrasa. Ona postaje simbol ljubavi, brige i nove prilike za topliji dom."
+  },
+
+  "contact": {
+    "title": "Kontaktirajte nas",
+    "intro": "Ako imate bilo kakva pitanja, prijedloge ili trebate pomoć — slobodno nam se javite.",
+    "emailTitle": "📩 Email",
+    "email": "lorena.deveric@gmail.com",
+    "socialTitle": "🌐 Društvene mreže",
+    "socialLinks": {
+      "instagram": "Instagram →",
+      "tiktok": "TikTok →"
+    },
+    "footerNote": "Odgovaramo u najkraćem mogućem roku. Veselimo se vašoj poruci! 🐾"
+  },
+
+  "hero": {
+    "subtitle": "LJUBAV PREMA PSIMA PRETVORENA U UMJETNOST",
+    "title": "MODNI DODACI ZA PSE",
+    "brand": "HANDMADE BY LADYFORYOU",
+    "buttons": {
+      "products": "POGLEDAJTE MAŠNE",
+      "instagram": "INSTAGRAM"
+    },
+    "images": {
+      "leftAlt": "Ručna mašna za pse",
+      "rightAlt": "Elegantna mašna za pse"
+    }
+  },
+
+  "featuredProducts": {
+    "title": "ISTAKNUTI PROIZVODI",
+    "subtitle": "Svaka mašna izrađena je ručno s puno ljubavi i posebno dizajnirana za svakog ljubimca. U nastavku pogledajte novu blagdansku kolekciju.",
+    "button": "Saznajte više",
+    "items": [
+      {
+        "id": "bordeaux-plis",
+        "name": "Bordeaux pliš mašna",
+        "description": "Ručna izrada, jedinstveni stil idealan za svečane prigode.",
+        "image": "/insta3.jpeg"
+      },
+      {
+        "id": "bozicna-zelena",
+        "name": "Božićna zelena mašna",
+        "description": "Ručna izrada idealna za nadolazeće blagdane.",
+        "image": "/insta9.jpeg"
+      },
+      {
+        "id": "karirana",
+        "name": "Karirana mašna",
+        "description": "Ručna izrada, doza elegancije za posebne prigode.",
+        "image": "/insta10.jpeg"
+      }
+    ]
+  },
+
+  "dogInfo": {
+    "title": "Tko smo mi",
+    "text": "Sve je započelo iz velike ljubavi prema mojoj kavalirki Lady. Toliko sam uživala fotografirati je, snimati i dijeliti njezine svakodnevne dogodovštine da sam 2022. godine otvorila njezin vlastiti Instagram profil. Kroz tu avanturu upoznala sam divnu zajednicu vlasnika Cavalier King Charles Spaniela diljem Europe i svijeta, a iz brojnih online poznanstava nastala su i prava prijateljstva.",
+    "button": "Saznajte više o nama"
+  },
+
+  "dualCards": {
+    "models": {
+      "title": "Dog modeli",
+      "text": "Najveća mi je radost što danas imam toliko različitih psećih modela diljem svijeta – od Amerike i Australije pa sve do Europe i moje Hrvatske – koji s ponosom nose moj rad.",
+      "button": "Saznajte više"
+    },
+    "donations": {
+      "title": "Donacije",
+      "text": "Tijekom godina sam podržala nekoliko hrvatskih skloništa malim gestama – darovala sam mašne i marame koje sam izradila s ljubavlju, a želja mi je nastaviti pomagati.",
+      "button": "Saznajte više"
+    }
+  },
+
+  "instagram": {
+    "title": "Naša Instagram zajednica –",
+    "followers": "10.000+",
+    "subtitle": "ljubitelja cavaliera",
+    "follow": "Zapratite nas na društvenim mrežama"
+  }
+}

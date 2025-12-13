@@ -1,27 +1,37 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ currentLang }) {
   const router = useRouter();
+  const pathname = usePathname();
 
-  const setLang = (lang) => {
-    document.cookie = `lang=${lang}; path=/`;
-    router.refresh(); // natjera server da ponovo rendera stranicu
+  const switchLanguage = (lang) => {
+    const segments = pathname.split("/");
+    segments[1] = lang;
+    router.push(segments.join("/"));
   };
 
   return (
-    <div className="flex gap-2 ml-4">
+    <div className="flex gap-2 items-center">
       <button
-        onClick={() => setLang("hr")}
-        className="text-sm font-medium hover:underline"
+        onClick={() => switchLanguage("hr")}
+        className={`px-2 py-1 rounded ${
+          currentLang === "hr"
+            ? "bg-[#2A1F14] text-white font-semibold"
+            : "text-[#2A1F14]/80 hover:text-[#2A1F14]"
+        }`}
       >
         HR
       </button>
-      <span>/</span>
+      <span className="text-[#2A1F14]/50">/</span>
       <button
-        onClick={() => setLang("en")}
-        className="text-sm font-medium hover:underline"
+        onClick={() => switchLanguage("en")}
+        className={`px-2 py-1 rounded ${
+          currentLang === "en"
+            ? "bg-[#2A1F14] text-white font-semibold"
+            : "text-[#2A1F14]/80 hover:text-[#2A1F14]"
+        }`}
       >
         EN
       </button>

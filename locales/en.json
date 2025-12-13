@@ -1,0 +1,171 @@
+{
+  "about": {
+    "heroTitle": "When love for dogs becomes inspiration for creation",
+    "heroText": "It all started with a great love for my cavalier Lady. I enjoyed photographing her, filming her, and sharing her everyday adventures so much that I opened her own Instagram profile in 2022. Through this adventure, I met a wonderful community of cavalier king charles spaniel owners across Europe and the world, and from numerous online acquaintances, real friendships were born. Over time, Lady became a little fashion influencer. Inspired by the beautiful dog accessories that are made all over the world — especially bows, scarves, and rubber bands, which are still rarely seen in Croatia — I wanted to bring exactly such products here. I spent hours watching YouTube tutorials, learning sewing techniques, but also working with hot glue and a gun, and all the little tricks that help make every detail neat, sturdy, and aesthetically flawless. At the same time, I researched where to get quality materials and modern, trendy patterns. After investing in equipment, I completely surrendered to the creative process — and fell in love with it.",
+    "story1Title": "The story that started it all",
+    "story1Text": "I was especially pleased to see dogs wearing something I had made with my own hands, with a lot of care and love. I also donated a large part of the bows to our shelters, so that their residents could also shine in something new and beautiful — you can read more about that in the Donations section. During that period, a friend made me a logo inspired by Lady, as the name suggests — ladyforyou.",
+    "story2Title": "Over time, our little family grew",
+    "story2Text": "Another cavalier has joined us — Story. Today, we are a true trio that brings joy, inspiration, and new ideas to everything we create every day. I make each product with love and a desire to make your pet look and feel special."
+  },
+  "dogModels": {
+    "intro1": "It is my greatest joy today to have so many different dog models around the world – from America and Australia to Europe and my Croatia – proudly wearing my work. Every time I see a photo of a dog in one of my products, I feel happy and motivated to continue. That’s why I create each piece individually, with care and understanding that no dog or owner is the same. Each has their wishes, sizes, and little details, and I’m here to listen and fulfill them.",
+    "intro2": "I always strive to give my best so that every product is as beautiful, comfortable, and perfectly fitted as possible, and I gladly provide advice about the ideal size or choice of details.",
+    "intro3": "Although my first clients were mostly foreigners who discovered me through the blog @lady_the_cav_dog with over 11k followers, today we are slowly expanding in Croatia, where I happily offer something different. For my creations, I opened a special Instagram profile @handmade_by_ladyforyou with over 1000 fans of fashion accessories for pets.",
+    "intro4": "And my biggest inspiration in all this are my two Cavaliers, who encourage me to create every day."
+  },
+  "products": {
+    "introText": "All bows are handmade from carefully selected materials, ordered from Pamigo Fabrics Croatia. Below each pattern, the name and composition are displayed, so you can easily choose what suits you best. Bows come in three sizes: small: 5 × 9 in, medium: 7 × 11 in, large: 9 × 13 in. Currently, only regular bows are available, perfect for any elegant outfit. Products are available on request — once you send a request, we will get back to you with production and availability information.",
+    "buttonText": "Send Request",
+    "items": {
+      "1": {
+        "name": "Red Checked Bow",
+        "description": "Scottish plaid, 65% polyester, 35% viscose"
+      },
+      "2": {
+        "name": "Emerald Plush Bow",
+        "description": "Emerald Green, 94% polyester, 6% elastane"
+      },
+      "3": {
+        "name": "Bordeaux Plush Bow",
+        "description": "94% polyester, 6% elastane"
+      },
+      "4": {
+        "name": "Christmas Gnome Bow",
+        "description": "80% cotton, 20% polyester"
+      },
+      "5": {
+        "name": "Half Panama Christmas Bow",
+        "description": "100% cotton"
+      },
+      "6": {
+        "name": "Christmas Bow for Dogs",
+        "description": "95% cotton, 5% elastane"
+      },
+      "7": {
+        "name": "Christmas Bow - Green",
+        "description": "Cotton fabric, 100% cotton"
+      },
+      "8": {
+        "name": "Christmas Bow - Red",
+        "description": "Cotton fabric, 100% cotton"
+      }
+    }
+  },
+  "specialCollection": {
+    "title": "Special Collection",
+    "altText": "Special Collection",
+    "lightboxAlt": "Full preview of collection image"
+  },
+  "donations": {
+    "hero": {
+      "title": "Bows that change lives",
+      "text1": "Over the years, I have supported several Croatian shelters with small gestures — donating bows and scarves I made with love, and I wish to continue helping. Every bow or scarf is not just a fashion detail, but a small contribution to big changes in the lives of animals waiting for their chance at happiness and a forever home. Our mission is simple: every dog deserves love, attention, and a chance for a home. Bows help in photographing, attract attention, and give dogs an extra dose of charm — and believe me, it makes a difference. Bows are not just a symbol of style, but a symbol of hope. When a dog shines in a photo, it is easier to find its way to someone's heart and home."
+    },
+    "cards": [
+      {
+        "title": "Association “Šapa u srcu”",
+        "text": "I was delighted to create bows for these adorable faces in Ogulin, brighten their day, and maybe increase the chance that a potential adopter notices them — and can’t resist them in such a charming outfit!",
+        "linkText": "Šapa u srcu",
+        "linkUrl": "https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94",
+        "image": "/azil_udruga_sapa.jpg",
+        "alt": "Šapa Spasa"
+      },
+      {
+        "title": "“Safe House”",
+        "text": "I follow the work of these wonderful volunteers near Velika Gorica who help rehome neglected animals, so I decided to delight them with a donation of bows. These lovely faces deserve to shine in front of the camera and steal someone's heart.",
+        "linkText": "Safe House",
+        "linkUrl": "https://www.instagram.com/udrugasapausrcu?igsh=NXNlZnI3c3hlZW94",
+        "image": "/donacije2.jpg",
+        "alt": "Safe House"
+      },
+      {
+        "title": "“Osijek Shelter - Udruga Pobjede”",
+        "text": "Before one Christmas, I donated some bows to the cutest faces in Osijek so that during that time of hope, they would also look groomed and maybe catch the eye of a potential adopter — because every dog deserves a warm forever home.",
+        "linkText": "Osijek Shelter - Udruga Pobjede",
+        "linkUrl": "https://www.instagram.com/azil.osijek.udruga.pobjede?igsh=NnBreHJhNGZ4Mmdk",
+        "image": "/azil2_osijek.jpg",
+        "alt": "Osijek Shelter"
+      }
+    ],
+    "closing": "When we give a bow to a dog waiting for a home — it becomes more than an ornament. It becomes a symbol of love, care, and a new opportunity for a warmer home."
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "intro": "If you have any questions, suggestions, or need help — feel free to reach out to us.",
+    "emailTitle": "📩 Email",
+    "email": "lorena.deveric@gmail.com",
+    "socialTitle": "🌐 Social Networks",
+    "socialLinks": {
+      "instagram": "Instagram →",
+      "tiktok": "TikTok →"
+    },
+    "footerNote": "We respond as quickly as possible. Looking forward to your message! 🐾"
+  },
+
+  "hero": {
+    "subtitle": "LOVE FOR DOGS TURNED INTO ART",
+    "title": "FASHION ACCESSORIES FOR DOGS",
+    "brand": "HANDMADE BY LADYFORYOU",
+    "buttons": {
+      "products": "VIEW BOWS",
+      "instagram": "INSTAGRAM"
+    },
+    "images": {
+      "leftAlt": "Handmade dog bow",
+      "rightAlt": "Elegant dog bow"
+    }
+  },
+
+  "featuredProducts": {
+    "title": "FEATURED PRODUCTS",
+    "subtitle": "Each bow is handcrafted with love and uniquely designed for every pet. Take a look at our latest seasonal collection.",
+    "button": "Learn more",
+    "items": [
+      {
+        "id": "bordeaux-plush",
+        "name": "Bordeaux Plush Bow",
+        "description": "Handcrafted, unique style perfect for special occasions.",
+        "image": "/insta3.jpeg"
+      },
+      {
+        "id": "christmas-green",
+        "name": "Christmas Green Bow",
+        "description": "Handmade, perfect for the upcoming holiday season.",
+        "image": "/insta9.jpeg"
+      },
+      {
+        "id": "checkered",
+        "name": "Checkered Bow",
+        "description": "Handcrafted with a touch of elegance for special moments.",
+        "image": "/insta10.jpeg"
+      }
+    ]
+  },
+
+  "dogInfo": {
+    "title": "Who We Are",
+    "text": "It all started from a great love for my Cavalier Lady. I enjoyed photographing her, filming her, and sharing her everyday adventures so much that in 2022 I opened her own Instagram profile. Through this journey, I met a wonderful community of Cavalier King Charles Spaniel owners across Europe and the world, and from many online connections, real friendships were born.",
+    "button": "Learn more about us"
+  },
+
+  "dualCards": {
+    "models": {
+      "title": "Dog Models",
+      "text": "My greatest joy today is having dog models all around the world – from America and Australia to Europe and my home country Croatia – proudly wearing my handmade creations.",
+      "button": "Learn more"
+    },
+    "donations": {
+      "title": "Donations",
+      "text": "Over the years, I have supported several Croatian shelters with small gestures – donating bows and bandanas handmade with love, and my wish is to continue helping.",
+      "button": "Learn more"
+    }
+  },
+
+  "instagram": {
+    "title": "Our Instagram community –",
+    "followers": "10,000+",
+    "subtitle": "cavalier lovers",
+    "follow": "Follow us on social media"
+  }
+}

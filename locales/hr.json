@@ -168,5 +168,14 @@
     "followers": "10.000+",
     "subtitle": "ljubitelja cavaliera",
     "follow": "Zapratite nas na društvenim mrežama"
+  },
+
+  "product": {
+    "contactTitle": "Zanima vas ovaj proizvod?",
+    "contactText": "Pošaljite nam poruku i javit ćemo vam se u najkraćem roku.",
+    "name": "Ime",
+    "email": "Email",
+    "message": "Poruka",
+    "send": "Pošalji"
   }
 }

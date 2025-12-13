@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function ProductList({ products, t }) {
+export default function ProductList({ products, t, lang }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState("");
 
@@ -44,7 +44,7 @@ export default function ProductList({ products, t }) {
 
               <div className="text-center w-full">
                 <Link
-                  href={`/products/${product.id}`}
+                  href={`/${lang}/products/${product.id}`}
                   className="block w-full bg-[#9b7e3c] text-white py-2 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
                 >
                   {t.products.buttonText}

@@ -167,5 +167,14 @@
     "followers": "10,000+",
     "subtitle": "cavalier lovers",
     "follow": "Follow us on social media"
+  },
+
+  "product": {
+    "contactTitle": "Interested in this product?",
+    "contactText": "Send us a message and we’ll get back to you shortly.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
   }
 }

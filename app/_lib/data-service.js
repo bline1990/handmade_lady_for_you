@@ -16,6 +16,29 @@ export async function getProducts() {
     return [];
   }
 }
+/*
+export async function getCabin(id) {
+  const { data, error } = await supabase
+    .from("cabins")
+    .select("*")
+    .eq("id", id)
+    .single();
+    */
+
+export async function getProduct(id) {
+  try {
+    const { data, error } = await supabase
+      .from("products")
+      .select("id,name,image,description")
+      .eq("id", id)
+      .single();
+    if (error) throw error;
+    return data;
+  } catch (err) {
+    console.log("Supabase getProductId error", err);
+    return [];
+  }
+}
 
 // DOG MODELS
 export async function getDogModelImages() {

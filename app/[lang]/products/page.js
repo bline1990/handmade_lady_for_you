@@ -21,6 +21,10 @@ export default async function ProductsPage({ params }) {
   const t = tRaw.products ? tRaw : { products: { introText: "" }, product: {} };
 
   const products = (await getProducts()) ?? [];
+  if (!products.length) {
+    return <p className="text-center py-20">No products available</p>;
+  }
+
   return (
     <main className="max-w-6xl mx-auto mt-10 px-6 py-10 space-y-15">
       {/* UVODNI TEKST */}

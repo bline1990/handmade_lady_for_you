@@ -7,11 +7,15 @@ export async function getProducts() {
     const { data, error } = await supabaseAdmin
       .from("products")
       .select("id,name,image,description");
-    if (error) throw error;
+
+    if (error) {
+      console.log("Supabase getProducts error:", error);
+      return [];
+    }
     return data || [];
   } catch (err) {
-    console.log("Supabase getProducts error:", err);
-    return []; // VRATI PRAZAN ARRAY, NE undefined
+    console.log("Supabase getProducts exception:", err);
+    return [];
   }
 }
 

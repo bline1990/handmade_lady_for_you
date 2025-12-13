@@ -4,18 +4,17 @@ import { supabaseAdmin } from "./supabaseAdmin";
 // PRODUCTS
 export async function getProducts() {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await supabaseAdmin
       .from("products")
       .select("id,name,image,description");
-
     if (error) throw error;
-
     return data || [];
   } catch (err) {
     console.log("Supabase getProducts error:", err);
-    return [];
+    return []; // VRATI PRAZAN ARRAY, NE undefined
   }
 }
+
 /*
 export async function getCabin(id) {
   const { data, error } = await supabase

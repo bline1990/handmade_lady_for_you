@@ -1,42 +1,56 @@
 import { Suspense } from "react";
+import ProductList from "@/app/_components/ProductList";
 import SpecialCollection from "@/app/_components/SpecialCollection";
 import PawLoader from "@/app/_components/PawLoader";
-import ProductList from "@/app/_components/ProductList";
 import { getProducts } from "@/app/_lib/data-service";
-import { getTranslations } from "@/app/_lib/translations";
+import en from "@/locales/en.json";
+import hr from "@/locales/hr.json";
 
-export const revalidate = 300;
+const translations = { en, hr };
+
+export const runtime = "nodejs";
+
 export const metadata = {
   title: "Products",
   description:
-    "Ručne mašne izrađene od pažljivo odabranih Pamigo Fabrics materijala. Dostupne u tri veličine, s prikazom naziva i sastava svakog uzorka.",
+    "Ručne mašne izrađene od pažljivo odabranih Pamigo Fabrics materijala.",
 };
 
 export default async function ProductsPage({ params }) {
-  // Ako params dolazi kao Promise (Next.js App Router)
+  // ✅ Always await params in App Router
   const resolvedParams = await params;
-  const { lang } = resolvedParams;
+  const lang = resolvedParams?.lang || "en";
 
-  const tRaw = await getTranslations(lang);
-  const t = tRaw.products ? tRaw : { products: { introText: "" }, product: {} };
+  // Dohvat prijevoda
+  const tRaw = translations[lang] || translations.en;
+  const t = {
+    products: {
+      introText: tRaw.products?.introText || "",
+      buttonText: tRaw.products?.buttonText || "",
+      items: tRaw.products?.items || {},
+    },
+    product: tRaw.product || {},
+  };
 
-  const products = (await getProducts()) ?? [];
-  if (!products.length) {
-    return <p className="text-center py-20">No products available</p>;
+  // Dohvat proizvoda
+  let products = [];
+  try {
+    products = (await getProducts()) || [];
+  } catch (err) {
+    console.error("Error loading products:", err);
+    products = [];
   }
 
   return (
     <main className="max-w-6xl mx-auto mt-10 px-6 py-10 space-y-15">
-      {/* UVODNI TEKST */}
       <section className="bg-[#E0DCD1] max-w-6xl p-10 text-left space-y-4 mx-auto">
         <p className="text-gray-700 text-lg leading-relaxed">
           {t.products.introText}
         </p>
       </section>
 
-      {/* LISTA PROIZVODA I SPECIAL COLLECTION */}
       <Suspense fallback={<PawLoader />}>
-        <ProductList products={products ?? []} t={t} lang={lang} />
+        <ProductList products={products} t={t} lang={lang} />
         <SpecialCollection lang={lang} />
       </Suspense>
     </main>

@@ -1,25 +1,50 @@
 import Image from "next/image";
-import { getTranslations } from "@/app/_lib/translations";
 import { sendMessage } from "@/app/actions/sendMessage";
 import { getProduct } from "@/app/_lib/data-service";
+import en from "@/locales/en.json";
+import hr from "@/locales/hr.json";
+
+const translations = { en, hr };
+
+export const runtime = "nodejs";
 
 export default async function ProductPage({ params }) {
-  const { lang, productId } = await params;
-  const t = (await getTranslations(lang)).product;
-  const product = await getProduct(productId);
+  // ✅ Await params
+  const resolvedParams = await params;
+  const lang = resolvedParams?.lang || "en";
+  const productId = resolvedParams?.productId;
+
+  const tRaw = translations[lang] || translations.en;
+  const t = tRaw.product || {};
+
+  // Dohvat proizvoda
+  let product = null;
+  try {
+    if (productId) {
+      product = await getProduct(productId);
+    }
+  } catch (err) {
+    console.error("Error loading product:", err);
+  }
+
+  if (!product) {
+    return <p className="text-center py-20">Product not found</p>;
+  }
 
   return (
     <main className="min-h-screen bg-[#E0DCD1] px-6 py-20">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         {/* IMAGE */}
-        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            className="object-cover"
-          />
-        </div>
+        {product.image && (
+          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover"
+            />
+          </div>
+        )}
 
         {/* INFO */}
         <div className="flex flex-col justify-center">
@@ -40,7 +65,6 @@ export default async function ProductPage({ params }) {
                 required
                 className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
               />
-
               <input
                 name="email"
                 type="email"
@@ -48,7 +72,6 @@ export default async function ProductPage({ params }) {
                 required
                 className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
               />
-
               <textarea
                 name="message"
                 placeholder={t.message}
@@ -56,7 +79,6 @@ export default async function ProductPage({ params }) {
                 required
                 className="border p-3 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
               />
-
               <button
                 type="submit"
                 className="bg-[#826829cb] text-white py-3 rounded-md font-semibold hover:bg-[#6e5424] active:scale-95 transition"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero({ t, lang }) {
   return (
-    <section className="my-6 relative bg-white">
+    <section className="relative bg-white">
       <div className="max-w-6xl mx-auto relative">
         {/* VISINA SEKCIJE */}
         <div className="relative flex items-center justify-between min-h-[480px]">

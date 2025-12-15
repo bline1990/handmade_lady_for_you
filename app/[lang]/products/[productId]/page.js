@@ -9,82 +9,61 @@ const translations = { en, hr };
 export const runtime = "nodejs";
 
 export default async function ProductPage({ params }) {
-  // ✅ Await params
+  // ✅ OBAVEZNO
   const resolvedParams = await params;
   const lang = resolvedParams?.lang || "en";
   const productId = resolvedParams?.productId;
 
-  const tRaw = translations[lang] || translations.en;
-  const t = tRaw.product || {};
+  if (!productId) {
+    return <p className="text-center py-20">Invalid product</p>;
+  }
 
-  // Dohvat proizvoda
-  let product = null;
+  const tRaw = translations[lang] || translations.en;
+  const t = tRaw?.product || {};
+
+  let product;
   try {
-    if (productId) {
-      product = await getProduct(productId);
-    }
+    product = await getProduct(productId);
   } catch (err) {
-    console.error("Error loading product:", err);
+    console.error("Supabase getProduct error:", err);
   }
 
   if (!product) {
     return <p className="text-center py-20">Product not found</p>;
   }
 
+  // ✅ prijevod proizvoda po ID-u
+  const translatedProduct = tRaw?.products?.items?.[productId] ?? product;
+
   return (
     <main className="min-h-screen bg-[#E0DCD1] px-6 py-20">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-        {/* IMAGE */}
         {product.image && (
           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
             <Image
               src={product.image}
-              alt={product.name}
+              alt={translatedProduct.name}
               fill
               className="object-cover"
             />
           </div>
         )}
 
-        {/* INFO */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-3xl md:text-4xl font-playfair mb-4">
-            {product.name}
+          <h1 className="text-3xl md:text-4xl mb-4">
+            {translatedProduct.name}
           </h1>
-          <p className="text-gray-700 mb-8">{product.description}</p>
 
-          {/* CONTACT FORM */}
+          <p className="text-gray-700 mb-8">{translatedProduct.description}</p>
+
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-2">{t.contactTitle}</h2>
-            <p className="text-gray-600 mb-4">{t.contactText}</p>
 
             <form action={sendMessage} className="flex flex-col gap-4">
-              <input
-                name="name"
-                placeholder={t.name}
-                required
-                className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
-              />
-              <input
-                name="email"
-                type="email"
-                placeholder={t.email}
-                required
-                className="border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
-              />
-              <textarea
-                name="message"
-                placeholder={t.message}
-                rows={4}
-                required
-                className="border p-3 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#826829cb]"
-              />
-              <button
-                type="submit"
-                className="bg-[#826829cb] text-white py-3 rounded-md font-semibold hover:bg-[#6e5424] active:scale-95 transition"
-              >
-                {t.send}
-              </button>
+              <input name="name" placeholder={t.name} required />
+              <input name="email" type="email" placeholder={t.email} required />
+              <textarea name="message" placeholder={t.message} required />
+              <button type="submit">{t.send}</button>
             </form>
           </div>
         </div>

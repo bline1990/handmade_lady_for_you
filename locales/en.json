@@ -176,5 +176,11 @@
     "email": "Email",
     "message": "Message",
     "send": "Send"
+  },
+  "thankYou": {
+    "title": "Thank you! Your message has been sent.",
+    "text": "We’re glad you contacted us. Check out our products or return to the homepage.",
+    "home": "Home",
+    "products": "Products"
   }
 }

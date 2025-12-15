@@ -60,10 +60,16 @@ export default async function ProductPage({ params }) {
             <h2 className="text-xl font-semibold mb-2">{t.contactTitle}</h2>
 
             <form action={sendMessage} className="flex flex-col gap-4">
+              <input type="hidden" name="lang" value={lang} />
               <input name="name" placeholder={t.name} required />
               <input name="email" type="email" placeholder={t.email} required />
               <textarea name="message" placeholder={t.message} required />
-              <button type="submit">{t.send}</button>
+              <button
+                type="submit"
+                className="block w-full bg-[#9b7e3c] text-white py-2 rounded-lg hover:bg-[#7d4b2e] transition active:bg-[#6e5424] active:scale-95"
+              >
+                {t.send}
+              </button>
             </form>
           </div>
         </div>

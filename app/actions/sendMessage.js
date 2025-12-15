@@ -8,6 +8,7 @@ export async function sendMessage(formData) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
+  const lang = formData.get("lang") || "en";
 
   // Spremi u Supabase
   const { error } = await supabase
@@ -33,5 +34,5 @@ export async function sendMessage(formData) {
   });
 
   // Redirect nakon uspješnog slanja
-  redirect("/thank-you");
+  redirect(`/${lang}/thank-you`);
 }

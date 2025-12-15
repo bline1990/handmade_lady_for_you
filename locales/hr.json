@@ -177,5 +177,11 @@
     "email": "Email",
     "message": "Poruka",
     "send": "Pošalji"
+  },
+  "thankYou": {
+    "title": "Hvala! Poruka je poslana.",
+    "text": "Drago nam je što ste nas kontaktirali. Pogledajte naše proizvode ili se vratite na početnu stranicu.",
+    "home": "Početna",
+    "products": "Proizvodi"
   }
 }

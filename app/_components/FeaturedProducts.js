@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FeaturedProducts({ t, lang }) {
   return (
-    <section className="py-28 bg-[#E0DCD1] relative overflow-hidden">
+    <section className="py-12 bg-[#E0DCD1] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* NASLOV */}
         <h2 className="text-1xl md:text-5xl font-playfair text-center text-[#2A1F14] mb-8">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function DogInfoSection({ t, lang }) {
   return (
-    <section className="flex flex-col md:flex-row w-full md:max-w-5xl mx-auto  md:my-20 px-0 md:px-6 text-center">
+    <section className="flex flex-col md:flex-row w-full md:max-w-5xl mx-auto mb-15  md:my-20 px-0 md:px-6 text-center">
       {/* TEXT */}
       <div className="w-full md:w-1/2 bg-[#826829cb] p-6 md:p-8 flex flex-col justify-center items-center">
         <h2 className="text-2xl text-center font-playfair mb-4 text-white">

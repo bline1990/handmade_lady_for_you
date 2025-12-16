@@ -14,7 +14,7 @@ export default async function DonationsPage({ params }) {
         <h1 className="w-full text-center text-xl sm:text-xl md:text-3xl font-playfair italic text-[#2A1F14] drop-shadow leading-snug mb-6 wrap-break-word">
           {t.hero.title}
         </h1>
-        <p className="w-full text-center text-sm sm:text-base md:text-lg text-[#3A2C20]/80 leading-relaxed">
+        <p className="w-full text-center text-m sm:text-base md:text-m text-[#3A2C20]/80 leading-relaxed">
           {t.hero.text1}
         </p>
       </section>

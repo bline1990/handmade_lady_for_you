@@ -46,7 +46,7 @@ export default async function ProductsPage({ params }) {
   return (
     <main className="max-w-6xl mx-auto mt-10 px-6 py-10 space-y-15">
       <section className="bg-[#E0DCD1] max-w-6xl p-10 text-left space-y-4 mx-auto">
-        <p className="text-gray-700 text-lg leading-relaxed">
+        <p className="text-gray-700 text-m leading-relaxed">
           {t.products.introText}
         </p>
       </section>

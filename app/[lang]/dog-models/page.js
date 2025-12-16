@@ -24,7 +24,7 @@ export default async function Page({ params }) {
     <main className="max-w-6xl mx-auto px-6 py-20 space-y-10">
       {/* UVODNI TEKST */}
       <section className="bg-[#E0DCD1] max-w-6xl w-full p-6 md:p-10 mx-auto">
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <p className="text-m text-gray-700 leading-relaxed">
           {t.dogModels.intro1}
         </p>
       </section>
@@ -35,13 +35,13 @@ export default async function Page({ params }) {
       </Suspense>
 
       <section className="bg-[#E0DCD1] max-w-6xl p-10 space-y-6">
-        <p className="text-lg leading-relaxed text-gray-700">
+        <p className="text-m leading-relaxed text-gray-700">
           {t.dogModels.intro2}
         </p>
-        <p className="text-lg leading-relaxed text-gray-700">
+        <p className="text-m leading-relaxed text-gray-700">
           {t.dogModels.intro3}
         </p>
-        <p className="text-lg leading-relaxed text-gray-700">
+        <p className="text-m leading-relaxed text-gray-700">
           {t.dogModels.intro4}
         </p>
       </section>

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
         : "Handmade bows and fashion accessories made with love from carefully selected materials.",
       images: [
         {
-          url: "/og-image.jpg",
+          url: "https://handmadeladyforyou.com/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "Handmade Lady For You",

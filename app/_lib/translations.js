@@ -4,5 +4,5 @@ import hr from "../../locales/hr.json";
 export const translations = { hr, en };
 
 export function getTranslations(lang) {
-  return translations[lang] || translations.en;
+  return translations[lang] || translations.hr;
 }

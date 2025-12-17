@@ -38,7 +38,7 @@ export default function Hero({ t, lang }) {
           {/* CENTER TEXT */}
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                       z-20 w-full px-6 text-center"
+                       z-20 w-full px-2 text-center"
           >
             <div className="max-w-5xl mx-auto bg-white/30 p-4 rounded-xl">
               <p className="font-playfair text-[10px] sm:text-xs md:text-sm text-[#9b7e3c] mb-4 whitespace-nowrap overflow-x-auto">

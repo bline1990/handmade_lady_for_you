@@ -1,7 +1,7 @@
 "use server";
 
-import { supabase } from "@/lib/supabase";
-import { transporter } from "@/lib/mailer";
+import { transporter } from "../_lib/mailer";
+import { supabaseAdmin } from "../_lib/supabaseAdmin";
 
 export async function sendInquiry(formData) {
   const name = formData.get("name");
@@ -10,7 +10,7 @@ export async function sendInquiry(formData) {
   const message = formData.get("message");
 
   // Spremanje u Supabase
-  const { error } = await supabase
+  const { error } = await supabaseAdmin
     .from("inquiries")
     .insert({ name, email, contact, message });
 

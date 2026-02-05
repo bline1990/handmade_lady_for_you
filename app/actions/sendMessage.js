@@ -1,8 +1,8 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { supabase } from "../_lib/supabase";
 import { transporter } from "../_lib/mailer";
+import { supabaseAdmin } from "../_lib/supabaseAdmin";
 
 export async function sendMessage(formData) {
   const name = formData.get("name");
@@ -11,7 +11,7 @@ export async function sendMessage(formData) {
   const lang = formData.get("lang") || "en";
 
   // Spremi u Supabase
-  const { error } = await supabase
+  const { error } = await supabaseAdmin
     .from("inquiries") // tablica
     .insert({ name, email, message });
 
